@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "roboto", sans-serif;
+}
+/*
+.custom-div-1 p {
+    color: red;
+}
+
+.custom-div-1 > p {
+    color: yellow;
+}
+
+.custom-div-1 ~ p {
+    color: blue;
+}
+
+.custom-div-1 p:nth-child(-n +2) {
+    color: rosybrown;
+}*/
+
+.custom-div-1:before {
+    content: "";
+}
+
+.custom-div-1::after {
+    content: "";
+}
+
+@media (max-width: 991px) {
+    .custom-div-1 {
+        background-color: red;
+    }
+}
+
+@media (max-width: 767px) {
+    .custom-div-1 {
+        background-color: yellow;
+    }
+}
+
+.flex {
+    display: flex;
+}
